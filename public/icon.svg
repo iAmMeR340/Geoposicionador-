@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="radar" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="#020617" stroke="#1e293b" stroke-width="8"/>
+  <!-- Radar Glow -->
+  <circle cx="256" cy="256" r="220" fill="url(#radar)"/>
+  <!-- Tactical Circles -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#10b981" stroke-width="4" stroke-dasharray="8 8" opacity="0.6"/>
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#10b981" stroke-width="2" opacity="0.4"/>
+  <circle cx="256" cy="256" r="80" fill="none" stroke="#10b981" stroke-width="3" opacity="0.8"/>
+  <!-- Crosshairs -->
+  <line x1="256" y1="30" x2="256" y2="482" stroke="#10b981" stroke-width="3" opacity="0.7"/>
+  <line x1="30" y1="256" x2="482" y2="256" stroke="#10b981" stroke-width="3" opacity="0.7"/>
+  <!-- Shield Icon -->
+  <path d="M256 120 L370 170 V300 C370 370 310 420 256 440 C202 420 142 370 142 300 V170 Z" fill="none" stroke="#10b981" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M256 160 L330 195 V280 C330 330 290 370 256 385 C222 330 182 330 182 280 V195 Z" fill="#10b981" opacity="0.8"/>
+  <!-- Outer Ring Accents -->
+  <path d="M 256 10 A 246 246 0 0 1 502 256" fill="none" stroke="#10b981" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 256 502 A 246 246 0 0 1 10 256" fill="none" stroke="#10b981" stroke-width="8" stroke-linecap="round"/>
+</svg>

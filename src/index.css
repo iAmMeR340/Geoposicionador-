@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #e2e8f0;
+    background-color: #020617;
+  }
+
+  .font-mono-military {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-tactical {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+}
+
+/* Custom Tactical Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Tactical Radar Animation - 360deg every 5s */
+@keyframes radar-sweep-360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar {
+  animation: radar-sweep-360 5s linear infinite;
+}
+
+.animate-radar-fast {
+  animation: radar-sweep-360 3s linear infinite;
+}
+
+.animate-radar-5s {
+  animation: radar-sweep-360 5s linear infinite;
+}
+
+/* High Contrast & Tactical Projection Styles */
+.text-shadow-tactical {
+  text-shadow: 0 0 8px rgba(16, 185, 129, 0.6), 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.text-shadow-cyan {
+  text-shadow: 0 0 8px rgba(6, 182, 212, 0.6), 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.text-shadow-amber {
+  text-shadow: 0 0 8px rgba(245, 158, 11, 0.6), 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.text-shadow-red {
+  text-shadow: 0 0 8px rgba(239, 68, 68, 0.7), 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.border-tactical-glow {
+  border-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.2), inset 0 0 15px rgba(16, 185, 129, 0.05);
+}
+
+.bg-tactical-panel {
+  background-color: rgba(11, 19, 41, 0.95);
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* Tactical Pulse Ring */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+/* Leaflet dark & tactical map high-contrast tweaks */
+.leaflet-container {
+  background-color: #020617 !important;
+  font-family: 'Rajdhani', sans-serif !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: #0b1329 !important;
+  color: #f8fafc !important;
+  border: 1.5px solid #10b981 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9), 0 0 15px rgba(16, 185, 129, 0.25) !important;
+}
+
+.leaflet-popup-tip {
+  background-color: #0b1329 !important;
+  border: 1px solid #10b981 !important;
+}
+
+.leaflet-tactical-tooltip {
+  background-color: rgba(11, 19, 41, 0.95) !important;
+  border: 1px solid #06b6d4 !important;
+  color: #f8fafc !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8) !important;
+  font-weight: 700 !important;
+}
+

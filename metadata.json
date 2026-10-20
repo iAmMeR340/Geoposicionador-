@@ -1,0 +1,7 @@
+{
+  "name": "AegisBase C4I - Vigilancia Militar & Telemetría Táctica",
+  "description": "Plataforma táctica de monitoreo militar de personal en tiempo real con geolocalización de alta precisión, telemetría biométrica de vestibles (BPM, SpO2, Temp), alertas tempranas E2EE y despacho operacional C4I.",
+  "requestFramePermissions": ["geolocation", "notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
